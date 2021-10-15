@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{562AE8C0-1552-4393-A25D-C8D121B463DB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LibreriaCadenaProduccion</RootNamespace>
+    <AssemblyName>LibreriaCadenaProduccion</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>lfirma.snk</AssemblyOriginatorKeyFile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LibreriaCadenaProduccion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LibreriaCadenaProduccion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=1.1.0.0, Culture=neutral, PublicKeyToken=9a0d19ffd4e7fe67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=1.1.0.0, Culture=neutral, PublicKeyToken=d604c8342bbdeba9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math, Version=1.1.0.0, Culture=neutral, PublicKeyToken=ec69efb6646d15f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.ImgeditLibCtl, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Digitalizacion\bin\Debug\AxInterop.ImgeditLibCtl.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.ScanLibCtl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Digitalizacion\bin\Debug\AxInterop.ScanLibCtl.dll</HintPath>
+    </Reference>
+    <Reference Include="Cifrado, Version=1.0.2411.21203, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Cifrado.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ADOX, Version=2.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Interop.ADOX.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ImgeditLibCtl, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>obj\Debug\Interop.ImgeditLibCtl.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.0.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Proyectos\OCRSplitter\OCRSplitter\OCRsplitter\OCRsplitter\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data, Version=5.0.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Digitalizacion\bin\Debug\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core, Version=2.4.3.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\nunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core.interfaces, Version=2.4.3.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\nunit.core.interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.4.3.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.111.6.20, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="softekbarcodelib2, Version=7.0.1.0, Culture=neutral, PublicKeyToken=3c09a6b205d2b618, processorArchitecture=x86">
+      <HintPath>..\Digitalizacion\bin\Debug\softekbarcodelib2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\TabStrip\bin\Release\System.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TabStrip, Version=2.0.2855.28262, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\TabStrip\bin\Release\TabStrip.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexiones\clsVPN.vb" />
+    <Compile Include="Configuracion\clsConfiguracion.vb" />
+    <Compile Include="Controles\Formularios\frmContenedorMDI.Designer.vb">
+      <DependentUpon>frmContenedorMDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Formularios\frmContenedorMDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Formularios\frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Listados\CtrlListViewInfo.Designer.vb">
+      <DependentUpon>CtrlListViewInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Listados\CtrlListViewInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\VisorImagenes\ImageControlFunciones.Designer.vb">
+      <DependentUpon>ImageControlFunciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\VisorImagenes\ImageControlFunciones.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\VisorImagenes\panelImagen.Designer.vb">
+      <DependentUpon>panelImagen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\VisorImagenes\panelImagen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\VisorImagenes\VisorDocumentos.Designer.vb">
+      <DependentUpon>VisorDocumentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\VisorImagenes\VisorDocumentos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Datos\GeneralAccess\ClsAccesoDatosAccess.vb" />
+    <Compile Include="Datos\GeneralMySQL\clsAccesoDatosMySQL.vb" />
+    <Compile Include="Datos\GeneralSQL\clsAccesoDatosSQL.vb" />
+    <Compile Include="Datos\Produccion\cadenaproduccion\clsAccesoDatosDocumento.vb" />
+    <Compile Include="Datos\Produccion\cadenaproduccion\clsAccesoDatosICU.vb" />
+    <Compile Include="Datos\Produccion\cadenaproduccion\clsAccesoDatosLote.vb" />
+    <Compile Include="Datos\Produccion\cadenaproduccion\clsAccesoDatosNHC.vb" />
+    <Compile Include="Datos\Produccion\cadenaproduccion\clsAccesoDatosProyecto.vb" />
+    <Compile Include="Datos\Produccion\clsAccesoDatosProduccion.vb" />
+    <Compile Include="Datos\Produccion\Plana\AccesoDatosProduccionPlanaORACLE.vb" />
+    <Compile Include="Datos\Produccion\Rosell\clsAccesoDatosRosellIndizacion.vb" />
+    <Compile Include="Datos\Produccion\SantaIsabel\ClsAccesoDatosReparacionLotes.vb" />
+    <Compile Include="Datos\Produccion\VistaHermosa\ClsAccesoDatosExportacion.vb" />
+    <Compile Include="Datos\Productividades\clsProductividades.vb" />
+    <Compile Include="Datos\Propietarias\Oracle\ClsAccesoDatosPropOracle.vb" />
+    <Compile Include="Entidades\clsAccion.vb" />
+    <Compile Include="Entidades\clsArea.vb" />
+    <Compile Include="Entidades\ClsCampoBarcode.vb" />
+    <Compile Include="Entidades\clsCaratula.vb" />
+    <Compile Include="Entidades\ClsColectivo.vb" />
+    <Compile Include="Entidades\clsComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entidades\clsDescargas.vb" />
+    <Compile Include="Entidades\ClsEntradaCMBD.vb" />
+    <Compile Include="Entidades\clsEstructuraBarcode.vb" />
+    <Compile Include="Entidades\clsFecha.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entidades\clsFecha2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entidades\clsFichero.vb" />
+    <Compile Include="Entidades\ClsMutua.vb" />
+    <Compile Include="Entidades\ClsOperacionesDigitalizacion.vb" />
+    <Compile Include="Entidades\clsPeticion.vb" />
+    <Compile Include="Entidades\clsRegistroTXT.vb" />
+    <Compile Include="Entidades\ClsSexo.vb" />
+    <Compile Include="Entidades\ClsTarea.vb" />
+    <Compile Include="Entidades\ClsTipoActo.vb" />
+    <Compile Include="Entidades\ClsTipoAlta.vb" />
+    <Compile Include="Entidades\ClsTipoDocumento.vb" />
+    <Compile Include="Entidades\ClsTipoIngreso.vb" />
+    <Compile Include="Entidades\Operaciones\clsOperacionesLoteExportacionPorDocumentos.vb" />
+    <Compile Include="Entidades\Operaciones\clsOperacionesLoteImportar.vb" />
+    <Compile Include="Entidades\Operaciones\clsOperacionesLoteExportacion.vb" />
+    <Compile Include="Entidades\Operaciones\clsOperacionesLoteRenombrar.vb" />
+    <Compile Include="EntradaSalida\ClsEntradaSalida.vb" />
+    <Compile Include="Estructuras\clsCursorRegistros.vb" />
+    <Compile Include="INI\clsIni.vb" />
+    <Compile Include="Interfaces\IConfiguracion.vb" />
+    <Compile Include="Module1.vb" />
+    <Compile Include="Ordenacion\ClsComparadorItemsListView.vb" />
+    <Compile Include="TXT\clsFormato.vb" />
+    <Compile Include="Win32\ClsAPIWIN32.vb" />
+    <Compile Include="ZIPS\clsRAR.vb" />
+    <Compile Include="Componentes\ComboImagen.Designer.vb">
+      <DependentUpon>ComboImagen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\ComboImagen.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes\CtrlCheckBox.Designer.vb">
+      <DependentUpon>CtrlCheckBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\CtrlCheckBox.vb" />
+    <Compile Include="Componentes\ImageComboItem.vb" />
+    <Compile Include="Componentes\RichTextBoxPrintCtrl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\Botones\ctrlBotonBase.Designer.vb">
+      <DependentUpon>ctrlBotonBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Botones\ctrlBotonBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Botones\ctrlBotonGrande.Designer.vb">
+      <DependentUpon>ctrlBotonGrande.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Botones\ctrlBotonGrande.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Botones\ctrlBotonMediano.Designer.vb">
+      <DependentUpon>ctrlBotonMediano.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Botones\ctrlBotonMediano.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Botones\ctrlBotonPequenyo.Designer.vb">
+      <DependentUpon>ctrlBotonPequenyo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Botones\ctrlBotonPequenyo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Botones\ctrlBotonTab.Designer.vb">
+      <DependentUpon>ctrlBotonTab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Botones\ctrlBotonTab.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Combos\ctrlComboBox.Designer.vb">
+      <DependentUpon>ctrlComboBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Combos\ctrlComboBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Constantes.vb" />
+    <Compile Include="Controles\Fechas\ctrlFechaNormal.designer.vb">
+      <DependentUpon>ctrlFechaNormal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Fechas\ctrlFechaNormal.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Fechas\ctrlFechaRango.Designer.vb">
+      <DependentUpon>ctrlFechaRango.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Fechas\ctrlFechaRango.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Formularios\FormMensajeBarraIndeterminada.Designer.vb">
+      <DependentUpon>FormMensajeBarraIndeterminada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Formularios\FormMensajeBarraIndeterminada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Formularios\FrmMensajeBarraProgreso.Designer.vb">
+      <DependentUpon>FrmMensajeBarraProgreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Formularios\FrmMensajeBarraProgreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Formularios\frmSeleccionServidor.designer.vb">
+      <DependentUpon>frmSeleccionServidor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Formularios\frmSeleccionServidor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Indicadores\ctrlIndicador.Designer.vb">
+      <DependentUpon>ctrlIndicador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Indicadores\ctrlIndicador.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Labels\ctrlLabelBase.Designer.vb">
+      <DependentUpon>ctrlLabelBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Labels\ctrlLabelBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Labels\ctrlLabelIntermitente.Designer.vb">
+      <DependentUpon>ctrlLabelIntermitente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Labels\ctrlLabelIntermitente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Labels\ctrlSubTituloPanel.Designer.vb">
+      <DependentUpon>ctrlSubTituloPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Labels\ctrlSubTituloPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Labels\ctrlTituloPanel.Designer.vb">
+      <DependentUpon>ctrlTituloPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Labels\ctrlTituloPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Listados\ctrlListViewSubirBajar.designer.vb">
+      <DependentUpon>ctrlListViewSubirBajar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Listados\ctrlListViewSubirBajar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Textos\ctrlTextBox.Designer.vb">
+      <DependentUpon>ctrlTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Textos\ctrlTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Textos\ctrlTxtConSeleccion.Designer.vb">
+      <DependentUpon>ctrlTxtConSeleccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Textos\ctrlTxtConSeleccion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\VisorImagenes\DrawingBoard.designer.vb">
+      <DependentUpon>DrawingBoard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\VisorImagenes\DrawingBoard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\VisorImagenes\ImageControl.designer.vb">
+      <DependentUpon>ImageControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\VisorImagenes\ImageControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Datos\AdministrativosSQL\clsAccesoDatosMetaDatosSQL.vb" />
+    <Compile Include="Datos\AccesCIE\AccesoDatosCIE.vb" />
+    <Compile Include="Datos\CodificacionSQL\AccesoDatosCodificacion.vb" />
+    <Compile Include="Datos\CodificacionSQL\AccesoDatosEstadosEpisodios.vb" />
+    <Compile Include="Datos\InformesSQL\AccesoDatosInformes.vb" />
+    <Compile Include="Datos\Produccion\Plana\AccesoDatosProduccionPlana.vb" />
+    <Compile Include="Datos\CodificacionSQL\AccesoDatosSeleccionEpisodios.vb" />
+    <Compile Include="Datos\GeneralExcel\clsAccesoDatosExcel.vb" />
+    <Compile Include="Datos\GeneralOracle\clsAccesoDatosOracle.vb" />
+    <Compile Include="DAT\ClsExtraerDat.vb" />
+    <Compile Include="Entidades\ClsCIE.vb" />
+    <Compile Include="Entidades\ClsTratamiento.vb" />
+    <Compile Include="Funciones\ClsComprobImagenes.vb" />
+    <Compile Include="Entidades\ClsDocumento.vb" />
+    <Compile Include="Entidades\ClsEpisodio.vb" />
+    <Compile Include="Entidades\ClsExportarCMBD.vb" />
+    <Compile Include="Entidades\ClsHistoriaClinica.vb" />
+    <Compile Include="Entidades\ClsHospital.vb" />
+    <Compile Include="Entidades\clsItem.vb" />
+    <Compile Include="Entidades\ClsLote.vb" />
+    <Compile Include="Entidades\ClsMorfologia.vb" />
+    <Compile Include="Entidades\clsNivelesCodificacion.vb" />
+    <Compile Include="Entidades\ClsParto.vb" />
+    <Compile Include="Entidades\ClsProyecto.vb" />
+    <Compile Include="Entidades\ClsServicio.vb" />
+    <Compile Include="Entidades\ClsSinonimo.vb" />
+    <Compile Include="Entidades\ClsTatamientoTerapeutico.vb" />
+    <Compile Include="Entidades\ClsTratamientoQuirurjico.vb" />
+    <Compile Include="Entidades\ClsUsuario.vb" />
+    <Compile Include="Funciones\FuncionesGlobales.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Paneles\pnlAltaUsuario.Designer.vb">
+      <DependentUpon>pnlAltaUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paneles\pnlAltaUsuario.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TXT\clsExtraerTXT.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Componentes\RichTextBoxPrintCtrl.resx">
+      <DependentUpon>RichTextBoxPrintCtrl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Botones\ctrlBotonBase.resx">
+      <DependentUpon>ctrlBotonBase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Botones\ctrlBotonGrande.resx">
+      <DependentUpon>ctrlBotonGrande.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Botones\ctrlBotonMediano.resx">
+      <DependentUpon>ctrlBotonMediano.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Botones\ctrlBotonPequenyo.resx">
+      <DependentUpon>ctrlBotonPequenyo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Botones\ctrlBotonTab.resx">
+      <DependentUpon>ctrlBotonTab.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Combos\ctrlComboBox.resx">
+      <DependentUpon>ctrlComboBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Fechas\ctrlFechaNormal.resx">
+      <DependentUpon>ctrlFechaNormal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Fechas\ctrlFechaRango.resx">
+      <DependentUpon>ctrlFechaRango.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Formularios\FormMensajeBarraIndeterminada.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMensajeBarraIndeterminada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Formularios\FrmMensajeBarraProgreso.resx">
+      <DependentUpon>FrmMensajeBarraProgreso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Formularios\frmSeleccionServidor.resx">
+      <DependentUpon>frmSeleccionServidor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Formularios\frmContenedorMDI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmContenedorMDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Formularios\frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Indicadores\ctrlIndicador.resx">
+      <DependentUpon>ctrlIndicador.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Labels\ctrlLabelBase.resx">
+      <DependentUpon>ctrlLabelBase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Labels\ctrlLabelIntermitente.resx">
+      <DependentUpon>ctrlLabelIntermitente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Labels\ctrlSubTituloPanel.resx">
+      <DependentUpon>ctrlSubTituloPanel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Labels\ctrlTituloPanel.resx">
+      <DependentUpon>ctrlTituloPanel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Listados\CtrlListViewInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CtrlListViewInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Listados\ctrlListViewSubirBajar.resx">
+      <DependentUpon>ctrlListViewSubirBajar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Textos\ctrlTextBox.resx">
+      <DependentUpon>ctrlTextBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Textos\ctrlTxtConSeleccion.resx">
+      <DependentUpon>ctrlTxtConSeleccion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\VisorImagenes\DrawingBoard.resx">
+      <DependentUpon>DrawingBoard.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\VisorImagenes\ImageControl.resx">
+      <DependentUpon>ImageControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\VisorImagenes\ImageControlFunciones.resx">
+      <DependentUpon>ImageControlFunciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\VisorImagenes\panelImagen.resx">
+      <DependentUpon>panelImagen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\VisorImagenes\VisorDocumentos.resx">
+      <DependentUpon>VisorDocumentos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneles\pnlAltaUsuario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>pnlAltaUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmdMouseEnter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmdGraNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmdWebTab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonComboCeckListbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloPaneles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_subir.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SGG_ProgessBar_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controles\Contenedores\TabStrip.dll" />
+    <Content Include="Resources\cmbenter.png" />
+    <Content Include="Resources\cmdMedNormal.png" />
+    <Content Include="Resources\cmdPeqNormal.png" />
+    <None Include="app.config" />
+    <None Include="lfirma.snk" />
+    <None Include="Resources\progressbar4.gif" />
+    <None Include="Resources\progressbar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{2A75196C-D9EB-4129-B803-931327F72D5C}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ImgeditLibCtl">
+      <Guid>{6D940288-9F11-11CE-83FD-02608C3EC08A}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="JRO">
+      <Guid>{AC3B8B4C-B6CA-11D1-9F31-00C04FC29D52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cifrado\" />
+    <Folder Include="ControlesUsuario\" />
+    <Folder Include="Controles\ProgressBar\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

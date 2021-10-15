@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DatosPeticiones" targetNamespace="http://tempuri.org/DatosPeticiones.xsd" xmlns:mstns="http://tempuri.org/DatosPeticiones.xsd" xmlns="http://tempuri.org/DatosPeticiones.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DatosPeticiones" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DatosPeticiones" msprop:Generator_DataSetName="DatosPeticiones" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Peticiones" msprop:Generator_UserTableName="Peticiones" msprop:Generator_RowDeletedName="PeticionesRowDeleted" msprop:Generator_RowChangedName="PeticionesRowChanged" msprop:Generator_RowClassName="PeticionesRow" msprop:Generator_RowChangingName="PeticionesRowChanging" msprop:Generator_RowEvArgName="PeticionesRowChangeEvent" msprop:Generator_RowEvHandlerName="PeticionesRowChangeEventHandler" msprop:Generator_TableClassName="PeticionesDataTable" msprop:Generator_TableVarName="tablePeticiones" msprop:Generator_RowDeletingName="PeticionesRowDeleting" msprop:Generator_TablePropName="Peticiones">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SIP" msprop:Generator_UserColumnName="SIP" msprop:Generator_ColumnVarNameInTable="columnSIP" msprop:Generator_ColumnPropNameInRow="SIP" msprop:Generator_ColumnPropNameInTable="SIPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Especialidad" msprop:Generator_UserColumnName="Especialidad" msprop:Generator_ColumnVarNameInTable="columnEspecialidad" msprop:Generator_ColumnPropNameInRow="Especialidad" msprop:Generator_ColumnPropNameInTable="EspecialidadColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Encontrada_x0020_Listado" msprop:Generator_UserColumnName="Encontrada Listado" msprop:Generator_ColumnVarNameInTable="columnEncontrada_Listado" msprop:Generator_ColumnPropNameInRow="Encontrada_Listado" msprop:Generator_ColumnPropNameInTable="Encontrada_ListadoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NumCaja" msprop:Generator_UserColumnName="NumCaja" msprop:Generator_ColumnVarNameInTable="columnNumCaja" msprop:Generator_ColumnPropNameInRow="NumCaja" msprop:Generator_ColumnPropNameInTable="NumCajaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Preparada" msprop:Generator_UserColumnName="Preparada" msprop:Generator_ColumnVarNameInTable="columnPreparada" msprop:Generator_ColumnPropNameInRow="Preparada" msprop:Generator_ColumnPropNameInTable="PreparadaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Digitalizada" msprop:Generator_UserColumnName="Digitalizada" msprop:Generator_ColumnVarNameInTable="columnDigitalizada" msprop:Generator_ColumnPropNameInRow="Digitalizada" msprop:Generator_ColumnPropNameInTable="DigitalizadaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Entregada" msprop:Generator_UserColumnName="Entregada" msprop:Generator_ColumnVarNameInTable="columnEntregada" msprop:Generator_ColumnPropNameInRow="Entregada" msprop:Generator_ColumnPropNameInTable="EntregadaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Lote" msprop:Generator_UserColumnName="Lote" msprop:Generator_ColumnVarNameInTable="columnLote" msprop:Generator_ColumnPropNameInRow="Lote" msprop:Generator_ColumnPropNameInTable="LoteColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dts_cabecera" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dts_cabecera" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dts_cabecera" msprop:Generator_DataSetName="dts_cabecera" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="informe" msprop:Generator_UserTableName="informe" msprop:Generator_RowDeletedName="informeRowDeleted" msprop:Generator_RowChangedName="informeRowChanged" msprop:Generator_RowClassName="informeRow" msprop:Generator_RowChangingName="informeRowChanging" msprop:Generator_RowEvArgName="informeRowChangeEvent" msprop:Generator_RowEvHandlerName="informeRowChangeEventHandler" msprop:Generator_TableClassName="informeDataTable" msprop:Generator_TableVarName="tableinforme" msprop:Generator_RowDeletingName="informeRowDeleting" msprop:Generator_TablePropName="informe">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="titulo" msprop:Generator_UserColumnName="titulo" msprop:Generator_ColumnVarNameInTable="columntitulo" msprop:Generator_ColumnPropNameInRow="titulo" msprop:Generator_ColumnPropNameInTable="tituloColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="subtitulo1" msprop:Generator_UserColumnName="subtitulo1" msprop:Generator_ColumnVarNameInTable="columnsubtitulo1" msprop:Generator_ColumnPropNameInRow="subtitulo1" msprop:Generator_ColumnPropNameInTable="subtitulo1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="codigoBarras" msprop:Generator_UserColumnName="codigoBarras" msprop:Generator_ColumnVarNameInTable="columncodigoBarras" msprop:Generator_ColumnPropNameInRow="codigoBarras" msprop:Generator_ColumnPropNameInTable="codigoBarrasColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="cadenaCodigoBarras" msprop:Generator_UserColumnName="cadenaCodigoBarras" msprop:Generator_ColumnVarNameInTable="columncadenaCodigoBarras" msprop:Generator_ColumnPropNameInRow="cadenaCodigoBarras" msprop:Generator_ColumnPropNameInTable="cadenaCodigoBarrasColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="subtitulo2" msprop:Generator_UserColumnName="subtitulo2" msprop:Generator_ColumnVarNameInTable="columnsubtitulo2" msprop:Generator_ColumnPropNameInRow="subtitulo2" msprop:Generator_ColumnPropNameInTable="subtitulo2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Memoria" msprop:Generator_UserColumnName="Memoria" msprop:Generator_ColumnVarNameInTable="columnMemoria" msprop:Generator_ColumnPropNameInRow="Memoria" msprop:Generator_ColumnPropNameInTable="MemoriaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Campo1Memoria" msprop:Generator_UserColumnName="Campo1Memoria" msprop:Generator_ColumnVarNameInTable="columnCampo1Memoria" msprop:Generator_ColumnPropNameInRow="Campo1Memoria" msprop:Generator_ColumnPropNameInTable="Campo1MemoriaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Campo2Memoria" msprop:Generator_UserColumnName="Campo2Memoria" msprop:Generator_ColumnPropNameInRow="Campo2Memoria" msprop:Generator_ColumnVarNameInTable="columnCampo2Memoria" msprop:Generator_ColumnPropNameInTable="Campo2MemoriaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Campo3Memoria" msprop:Generator_UserColumnName="Campo3Memoria" msprop:Generator_ColumnPropNameInRow="Campo3Memoria" msprop:Generator_ColumnVarNameInTable="columnCampo3Memoria" msprop:Generator_ColumnPropNameInTable="Campo3MemoriaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Campo4Memoria" msprop:Generator_UserColumnName="Campo4Memoria" msprop:Generator_ColumnVarNameInTable="columnCampo4Memoria" msprop:Generator_ColumnPropNameInRow="Campo4Memoria" msprop:Generator_ColumnPropNameInTable="Campo4MemoriaColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

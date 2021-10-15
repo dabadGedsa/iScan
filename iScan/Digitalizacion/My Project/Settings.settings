@@ -1,0 +1,156 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="RutaImagenTemp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\temp</Value>
+    </Setting>
+    <Setting Name="RutaDescargaImagenes" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\temp</Value>
+    </Setting>
+    <Setting Name="RutaEjecutableScaneo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RutaEjecutableRetoque" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Program Files\Paint.NET\PaintDotNet.exe</Value>
+    </Setting>
+    <Setting Name="rutaAplicacionEscaner" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\IrfanView\i_view32.exe</Value>
+    </Setting>
+    <Setting Name="pathArchivoConfigEscaner" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\IrfanView\i_view32.ini</Value>
+    </Setting>
+    <Setting Name="codigoEpidemiologia" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">7002</Value>
+    </Setting>
+    <Setting Name="cadenaConexionOracle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=plana01;User ID=novahis;Password=novahis;Unicode=True</Value>
+    </Setting>
+    <Setting Name="cabeceraBarcodeHistoria" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="lenNHCBarcode" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="barcodeConCabecera" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">true</Value>
+    </Setting>
+    <Setting Name="longitudBarcode" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">12</Value>
+    </Setting>
+    <Setting Name="rutaRepositorioHospital" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">G:\7001</Value>
+    </Setting>
+    <Setting Name="cadenaConexion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">88|229|199|32|241|99|8|181|198|5|67|83|233|80|184|54|116|135|121|107|64|79|248|173|242|4|14|118|88|223|235|151|87|127|227|114|90|136|212|60|64|231|84|207|2|232|1|162|79|9|65|132|70|57|25|107|2|15|25|19|225|121|16|115|178|231|92|14|209|231|22|140|232|243|194|62|125|171|202|14</Value>
+    </Setting>
+    <Setting Name="direccion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">12|53|164|203|59|128|58|209|125|126|178|203|152|188|181|125|123|32|167|111|167|84|29|253|194|240|205|205|178|136|16|231|19|246|204|71|140|222|120|101|179|91|17|90|69|222|192|97|146|45|91|7|225|202|167|105|128|86|69|208|254|15|108|17|204|62|221|117|108|185|163|86|215|161|147|56|188|192|181|95</Value>
+    </Setting>
+    <Setting Name="fecha" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">4|133|145|152|252|2|130|93|181|39|76|44|76|34|126|57</Value>
+    </Setting>
+    <Setting Name="PermitirDigitalizarNoTiff" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="ModoDepuracion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="proyecto" Type="System.String" Scope="User">
+      <Value Profile="(Default)">7018</Value>
+    </Setting>
+    <Setting Name="PREP_caracter_Usuario" Type="System.String" Scope="User">
+      <Value Profile="(Default)">UU</Value>
+    </Setting>
+    <Setting Name="PREP_caracter_RX" Type="System.String" Scope="User">
+      <Value Profile="(Default)">RX</Value>
+    </Setting>
+    <Setting Name="PREP_caracter_SinDoc" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SDSD</Value>
+    </Setting>
+    <Setting Name="PREP_caracter_CD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CD</Value>
+    </Setting>
+    <Setting Name="PREP_caracter_ND" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NDND</Value>
+    </Setting>
+    <Setting Name="PREP_caracter_ERROR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ERROR</Value>
+    </Setting>
+    <Setting Name="PREP_caracter_DESTRUIR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DESTRUIR</Value>
+    </Setting>
+    <Setting Name="PREP_rutaZumbido" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\buzz.wav</Value>
+    </Setting>
+    <Setting Name="PREP_rutaSonidoOK" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\SonidoOK.wav</Value>
+    </Setting>
+    <Setting Name="PREP_caracter_CI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CICI</Value>
+    </Setting>
+    <Setting Name="PREP_caracter_Caja" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CC</Value>
+    </Setting>
+    <Setting Name="PREP_caracter_Coleccion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CL</Value>
+    </Setting>
+    <Setting Name="PREP_caracter_Lote" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LL</Value>
+    </Setting>
+    <Setting Name="PREP_caracter_NHC" Type="System.String" Scope="User">
+      <Value Profile="(Default)">H;C</Value>
+    </Setting>
+    <Setting Name="PREP_Tabla_campos" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TRAZABILIDADLOTES;idLote;UsuarioPreparado;FechaInicioPreparado;FechaFinPreparado</Value>
+    </Setting>
+    <Setting Name="cadenaConexionMySQL" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PREP_caracter_Caja2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CJ</Value>
+    </Setting>
+    <Setting Name="DIGI_modificar_NHC" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DIGI_porcentaje_pixel_negro" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="DIGI_rutaLocalImagenes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\TEMP\iScan</Value>
+    </Setting>
+    <Setting Name="DIGI_timeout_sin_escanear" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="DIGI_TIPOLOTE_modificar" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DIGI_TIPOLOTE_validar_al_cerrar_lote" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DIGI_validar_NHC" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PREP_tipoLote" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TPL</Value>
+    </Setting>
+    <Setting Name="PREP_tipoLote_fijo" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PREP_elimina_prefijo_NHC" Type="System.String" Scope="User">
+      <Value Profile="(Default)">090</Value>
+    </Setting>
+    <Setting Name="DIGI_Muestra_Perfiles" Type="System.String" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="separadorCaratula" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="WS_tipoDocumentoATratar" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DocumentoClinico</Value>
+    </Setting>
+    <Setting Name="tipoDocumentoEnUso" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

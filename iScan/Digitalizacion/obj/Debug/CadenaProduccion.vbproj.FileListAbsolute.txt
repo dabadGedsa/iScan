@@ -1,0 +1,7 @@
+C:\Documents and Settings\mgllorens.CPGEDSA\Escritorio\Digitalizacion\2_correccion\bin\Debug\correccionDigi.exe.config
+C:\Documents and Settings\mgllorens.CPGEDSA\Escritorio\Digitalizacion\2_correccion\obj\Debug\Interop.ImgeditLibCtl.dll
+C:\Documents and Settings\mgllorens.CPGEDSA\Escritorio\Digitalizacion\2_correccion\obj\Debug\AxInterop.ImgeditLibCtl.dll
+C:\Documents and Settings\mgllorens.CPGEDSA\Escritorio\Digitalizacion\2_correccion\obj\Debug\CadenaProduccion.vbproj.ResolveComReference.cache
+C:\Documents and Settings\mgllorens.CPGEDSA\Escritorio\Digitalizacion\2_correccion\obj\Debug\correccionDigi.exe
+C:\Documents and Settings\mgllorens.CPGEDSA\Escritorio\Digitalizacion\2_correccion\obj\Debug\correccionDigi.xml
+C:\Documents and Settings\mgllorens.CPGEDSA\Escritorio\Digitalizacion\2_correccion\obj\Debug\correccionDigi.pdb

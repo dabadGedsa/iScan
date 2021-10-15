@@ -1,0 +1,12 @@
+C:\Documents and Settings\jmedrano.CPGEDSA\Escritorio\Entorno de trabajo\Codigo fuente NET 2008\20080516 - Solucion Produccion\1_verificacion\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\jmedrano.CPGEDSA\Escritorio\Entorno de trabajo\Codigo fuente NET 2008\20080516 - Solucion Produccion\1_verificacion\obj\Release\ProyectoGenerico.DrawingBoard.resources
+C:\Documents and Settings\jmedrano.CPGEDSA\Escritorio\Entorno de trabajo\Codigo fuente NET 2008\20080516 - Solucion Produccion\1_verificacion\obj\Release\ProyectoGenerico.ImageControl.resources
+C:\Documents and Settings\jmedrano.CPGEDSA\Escritorio\Entorno de trabajo\Codigo fuente NET 2008\20080516 - Solucion Produccion\1_verificacion\obj\Release\ProyectoGenerico.frmContenedorMDI.resources
+C:\Documents and Settings\jmedrano.CPGEDSA\Escritorio\Entorno de trabajo\Codigo fuente NET 2008\20080516 - Solucion Produccion\1_verificacion\obj\Release\ProyectoGenerico.frmVerificacion.resources
+C:\Documents and Settings\jmedrano.CPGEDSA\Escritorio\Entorno de trabajo\Codigo fuente NET 2008\20080516 - Solucion Produccion\1_verificacion\obj\Release\ProyectoGenerico.frmSeleccionLote.resources
+C:\Documents and Settings\jmedrano.CPGEDSA\Escritorio\Entorno de trabajo\Codigo fuente NET 2008\20080516 - Solucion Produccion\1_verificacion\obj\Release\ProyectoGenerico.frmSeleccionProyecto.resources
+C:\Documents and Settings\jmedrano.CPGEDSA\Escritorio\Entorno de trabajo\Codigo fuente NET 2008\20080516 - Solucion Produccion\1_verificacion\obj\Release\ProyectoGenerico.frmSplash.resources
+C:\Documents and Settings\jmedrano.CPGEDSA\Escritorio\Entorno de trabajo\Codigo fuente NET 2008\20080516 - Solucion Produccion\1_verificacion\obj\Release\ProyectoGenerico.frmVisualizadorDocumentos.resources
+C:\Documents and Settings\jmedrano.CPGEDSA\Escritorio\Entorno de trabajo\Codigo fuente NET 2008\20080516 - Solucion Produccion\1_verificacion\obj\Release\ProyectoGenerico.frmInfor1.resources
+C:\Documents and Settings\jmedrano.CPGEDSA\Escritorio\Entorno de trabajo\Codigo fuente NET 2008\20080516 - Solucion Produccion\1_verificacion\obj\Release\ProyectoGenerico.Resources.resources
+C:\Documents and Settings\jmedrano.CPGEDSA\Escritorio\Entorno de trabajo\Codigo fuente NET 2008\20080516 - Solucion Produccion\1_verificacion\obj\Release\proyecto_verificacionDigi.vbproj.GenerateResource.Cache
